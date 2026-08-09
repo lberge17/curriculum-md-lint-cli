@@ -1,0 +1,25 @@
+{
+  "name": "curriculum-md-lint-cli",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A local CLI for linting curriculum markdown files.",
+  "scripts": {
+    "start": "node bin/cli.js",
+    "lint": "node bin/cli.js",
+    "lint:fix": "echo 'No automatic fixer available.' && exit 1",
+    "test": "mocha --exit"
+  },
+  "devDependencies": {
+    "mocha": "^10.2.0",
+    "chai": "^4.3.7"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "execa": "^7.1.1",
+    "globby": "^13.2.2",
+    "remark-parse": "^10.0.1",
+    "unist-util-visit": "^4.1.0",
+    "unified": "^10.1.2"
+  }
+}
