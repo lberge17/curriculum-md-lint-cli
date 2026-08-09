@@ -13,27 +13,39 @@ Quickstart
 
 2. Install dependencies:
 
-   npm install
+```bash
+npm install
+```
 
 3. (Optional) Install cspell globally to enable spellchecking:
 
-   npm install -g cspell
+```bash
+npm install -g cspell
+```
 
 4. Run the linter from the repository root:
 
-   ./bin/cli.js "docs/**/*.md"
+```bash
+./bin/cli.js "docs/**/*.md"
+```
 
    You can also use:
 
-   npm run lint -- "docs/**/*.md"
+```bash
+npm run lint -- "docs/**/*.md"
+```
 
 5. Disable one or more checks when needed:
 
-   ./bin/cli.js --disable alt-text --disable heading-structure "docs/**/*.md"
+```bash
+./bin/cli.js --disable alt-text --disable heading-structure "docs/**/*.md"
+```
 
    Or with the compact form:
 
-   ./bin/cli.js --disable=relative-links "docs/**/*.md"
+```bash
+./bin/cli.js --disable=relative-links "docs/**/*.md"
+```
 
    Available rule names:
    - alt-text
